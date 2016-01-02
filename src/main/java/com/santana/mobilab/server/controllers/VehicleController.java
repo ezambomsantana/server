@@ -1,10 +1,10 @@
-package com.santana.mobilab.server.run;
+package com.santana.mobilab.server.controllers;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.inject.Inject;
 
+import org.apache.commons.collections.IteratorUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,14 +20,8 @@ public class VehicleController {
     VehicleRepository vehicleRepository;
     
     @RequestMapping(value="/list", headers="Accept=application/json")
-    public List<Vehicle> getAllVehicles() {
-        List<Vehicle> vehicles = new ArrayList<Vehicle>();
-        Iterable<Vehicle> vs = vehicleRepository.findAll();
-        for (Vehicle v : vs) {
-        	vehicles.add(v);
-        }
-    	
-    	return vehicles;
+    public List<Vehicle> getAllVehicles() {    	
+    	return IteratorUtils.toList(vehicleRepository.findAll().iterator());
     }
     
     @RequestMapping("/getById")
