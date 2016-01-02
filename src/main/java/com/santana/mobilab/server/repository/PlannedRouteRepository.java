@@ -8,4 +8,6 @@ import com.santana.mobilab.server.model.PlannedRoute;
 @Repository
 public interface PlannedRouteRepository extends CrudRepository<PlannedRoute, Long> {
        
+	
+	
 }

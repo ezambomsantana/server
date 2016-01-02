@@ -19,9 +19,14 @@ public class Vehicle {
 
 	@OneToOne(targetEntity=PlannedRoute.class, fetch=FetchType.EAGER)
 	private PlannedRoute line;
+	
 	private String garage;
 	private String company;
-		
+
+	private Double lastLat;	
+
+	private Double lastLong;
+	
 	public int getId() {
 		return id;
 	}
@@ -58,5 +63,16 @@ public class Vehicle {
 	public void setCompany(String company) {
 		this.company = company;
 	}
-
+	public Double getLastLat() {
+		return lastLat;
+	}
+	public void setLastLat(Double lastLat) {
+		this.lastLat = lastLat;
+	}
+	public Double getLastLong() {
+		return lastLong;
+	}
+	public void setLastLong(Double lastLong) {
+		this.lastLong = lastLong;
+	}
 }
