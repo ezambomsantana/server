@@ -17,8 +17,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 		"com.santana.socialnetwork.model"
 		})
 @ComponentScan(basePackages = {
-		"com.santana.mobilab.server.controllers",
-		"com.santana.socialnetwork.server.controllers"
+		"com.santana.mobilab.server.controllers"
 })
 public class Application {
 

@@ -1,0 +1,65 @@
+
+INSERT INTO planned_route VALUES (1, 'Butantã');
+INSERT INTO planned_route VALUES (2, 'Centro');
+INSERT INTO planned_route VALUES (3, 'Itaquera');
+
+INSERT INTO "position" VALUES (1, -23.572404, -46.704862, 1);
+INSERT INTO "position" VALUES (2, -23.569140, -46.715376, 2);
+INSERT INTO "position" VALUES (3, -23.575118, -46.729968, 3);
+INSERT INTO "position" VALUES (4, -23.572286, -46.739066, 4);
+INSERT INTO "position" VALUES (5, -23.562161, -46.746807, 5);
+INSERT INTO "position" VALUES (6, -23.556768, -46.750052, 6);
+INSERT INTO "position" VALUES (7, -23.555077, -46.756210, 6);
+INSERT INTO "position" VALUES (8, -23.549156, -46.758678, 6);
+INSERT INTO "position" VALUES (9, -23.543589, -46.764300, 6);
+
+INSERT INTO "position" VALUES (100, -23.547434, -46.647771, 1);
+INSERT INTO "position" VALUES (101, -23.555668, -46.663082, 2);
+INSERT INTO "position" VALUES (102, -23.565819, -46.651599, 3);
+INSERT INTO "position" VALUES (103, -23.575222, -46.641749, 4);
+INSERT INTO "position" VALUES (104, -23.556136, -46.637871, 5);
+INSERT INTO "position" VALUES (105, -23.556284, -46.628322, 6);
+INSERT INTO "position" VALUES (106, -23.547904, -46.626048, 7);
+
+INSERT INTO "position" VALUES (200, -23.540629, -46.455941, 1);
+INSERT INTO "position" VALUES (201, -23.535009, -46.451966, 2);
+INSERT INTO "position" VALUES (202, -23.532297, -46.447520, 3);
+INSERT INTO "position" VALUES (203, -23.531105, -46.448716, 4);
+INSERT INTO "position" VALUES (204, -23.525832, -46.444665, 5);
+INSERT INTO "position" VALUES (205, -23.525857, -46.432966, 6);
+INSERT INTO "position" VALUES (206, -23.535536, -46.427531, 7);
+
+
+INSERT INTO planned_route_positions VALUES (1, 1);
+INSERT INTO planned_route_positions VALUES (1, 2);
+INSERT INTO planned_route_positions VALUES (1, 3);
+INSERT INTO planned_route_positions VALUES (1, 4);
+INSERT INTO planned_route_positions VALUES (1, 5);
+INSERT INTO planned_route_positions VALUES (1, 6);
+INSERT INTO planned_route_positions VALUES (1, 7);
+INSERT INTO planned_route_positions VALUES (1, 8);
+INSERT INTO planned_route_positions VALUES (1, 9);
+
+INSERT INTO planned_route_positions VALUES (2, 100);
+INSERT INTO planned_route_positions VALUES (2, 101);
+INSERT INTO planned_route_positions VALUES (2, 102);
+INSERT INTO planned_route_positions VALUES (2, 103);
+INSERT INTO planned_route_positions VALUES (2, 104);
+INSERT INTO planned_route_positions VALUES (2, 105);
+INSERT INTO planned_route_positions VALUES (2, 106);
+
+INSERT INTO planned_route_positions VALUES (3, 200);
+INSERT INTO planned_route_positions VALUES (3, 201);
+INSERT INTO planned_route_positions VALUES (3, 202);
+INSERT INTO planned_route_positions VALUES (3, 203);
+INSERT INTO planned_route_positions VALUES (3, 204);
+INSERT INTO planned_route_positions VALUES (3, 205);
+INSERT INTO planned_route_positions VALUES (3, 206);
+
+
+
+INSERT INTO vehicle VALUES (1, 'Empresa 1', 'Butantã', -23.572286, -46.739066, 'ABC1234', 'AHZ', 1);
+INSERT INTO vehicle VALUES (2, 'Empresa 2', 'Paulista', -23.556136, -46.637871, 'XYZ4323', 'FGZ', 2);
+INSERT INTO vehicle VALUES (2, 'Empresa 3', 'Zona Leste', -23.535009, -46.451966, 'AZF5433', 'AZF', 3);
+
+
