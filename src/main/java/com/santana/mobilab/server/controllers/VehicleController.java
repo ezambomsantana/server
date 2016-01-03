@@ -19,7 +19,7 @@ public class VehicleController {
     @Inject
     VehicleRepository vehicleRepository;
     
-    @RequestMapping(value="/list", headers="Accept=application/json")
+    @RequestMapping("/list")
     public List<Vehicle> getAllVehicles() {    	
     	return IteratorUtils.toList(vehicleRepository.findAll().iterator());
     }

@@ -4,6 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.orm.jpa.EntityScan;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
@@ -11,11 +12,14 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 		"com.santana.mobilab.server.repository",
 		"com.santana.socialnetwork.repository"
 		})
-@EnableAutoConfiguration
 @EntityScan(basePackages = {
 		"com.santana.mobilab.server.model",
 		"com.santana.socialnetwork.model"
 		})
+@ComponentScan(basePackages = {
+		"com.santana.mobilab.server.controllers",
+		"com.santana.socialnetwork.server.controllers"
+})
 public class Application {
 
     public static void main(String[] args) {
